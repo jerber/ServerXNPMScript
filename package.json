@@ -1,6 +1,6 @@
 {
 	"name": "run-serverx",
-	"version": "1.0.19",
+	"version": "1.0.20",
 	"description": "Runs your serverx code locally.",
 	"main": "index.js",
 	"bin": {
@@ -9,11 +9,15 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "",
+	"author": "Jeremy Berman",
 	"license": "ISC",
 	"dependencies": {
 		"rimraf": "^3.0.2",
 		"shelljs": "^0.8.4",
 		"yargs": "^15.3.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jerber/ServerXNPMScript"
 	}
 }
