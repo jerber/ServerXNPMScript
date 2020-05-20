@@ -53,12 +53,12 @@ process.chdir(`${SERVERX_DIR}`);
 // shell.exec('rm -rf .git');
 // shell.exec('rd /s /q .git'); // make sure this is for windows
 
-SERVERX_API_KEY = argv.SERVERX_API_KEY;
-SERVERX_PROJECT_ID = argv.SERVERX_PROJECT_ID;
+API_KEY = argv.API_KEY;
+PROJECT_ID = argv.PROJECT_ID;
 
 fs.writeFileSync(
   `.env`,
-  `SERVERX_API_KEY=${SERVERX_API_KEY}\nSERVERX_PROJECT_ID=${SERVERX_PROJECT_ID}\nFLASK_DEBUG=1\n`
+  `API_KEY=${API_KEY}\nPROJECT_ID=${PROJECT_ID}\nFLASK_DEBUG=1\n`
 );
 
 res = shell.exec(
